@@ -1,0 +1,42 @@
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  transition: border-color 0.3s ease; /* Transición suave en el cambio de color del borde */
+}
+
+/* Estilo cuando el input está enfocado */
+.input:focus {
+  outline: none; /* Eliminar el borde de enfoque predeterminado */
+  border-color: #272829; /* Cambiar el color del borde cuando está enfocado */
+}
+
+.button {
+  background-color: #6CB4EF; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Relleno interno */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  transition: background-color 0.3s ease; /* Transición suave en el cambio de color de fondo */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilo cuando el botón está enfocado o activo */
+.button:focus,
+.button:active {
+  outline: none; /* Eliminar el borde de enfoque predeterminado */
+  background-color: #146EB8; /* Cambiar el color de fondo al enfocar o hacer clic */
+}
+
+/* Estilo cuando el cursor pasa por encima del botón */
+.button:hover {
+  background-color: #146EB8; /* Cambiar el color de fondo al pasar por encima */
+}
+.code {
+  font-weight: 700;
+  font-family: var(--font-mono);
+}

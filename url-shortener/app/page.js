@@ -1,26 +1,22 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from './page.module.css';
 
 export default function Home() {
+  const inputRef = typeof window !== 'undefined' ? useRef() : null;
+  const [shortURL, setShortURL] = typeof window !== 'undefined' ? useState("") : [null, null];
+
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <h1 className={styles.title}>URL Shortener</h1>
+      <p className={styles.description}>
+        Acorta tus URLs aquí
+      </p>
+      <div className={styles.grid}>
+        <form className={styles.card}>
+          <input ref={inputRef} className={styles.input} placeholder="URL"/>
+          <button className={styles.button}>Shorten</button>
+        </form>
       </div>
     </main>
   );
 }
+
